@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # COMMON PACKAGES
 sudo apt update && apt install -y --no-install-recommends \
