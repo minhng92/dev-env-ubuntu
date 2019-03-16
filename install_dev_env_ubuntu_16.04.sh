@@ -1,26 +1,37 @@
 #!/bin/sh
 
-# COMMON PACKAGES
+# -------------------
+# | COMMON PACKAGES |
+# -------------------
 sudo apt update && apt install -y --no-install-recommends \
         build-essential \
         git \
         curl \
-        ssh \
-        openssh-server \
+        ssh \        
         nano \
         htop \
         unzip \
         wget \
         apt-transport-https \
-        ca-certificates
+        ca-certificates \
 
-# PACKAGES FOR C/C++ DEVELOPMENT
-sudo apt install -y --no-install-recommends \
+# ----------------------------------
+# | PACKAGES FOR C/C++ DEVELOPMENT |
+# ----------------------------------
+sudo apt update && apt install -y --no-install-recommends \
         cmake \        
         clang \
         libboost-dev \          # boost library
         libboost-all-dev \
         libjsoncpp-dev \        # json library
+
+# -----------------------
+# | PACKAGES FOR SERVER |
+# -----------------------
+sudo apt update && apt install -y --no-install-recommends \
+        openssh-server \
+        nginx \
+
 
 # DOCKER INSTALLATION
 curl -fsSL https://get.docker.com -o get-docker.sh
