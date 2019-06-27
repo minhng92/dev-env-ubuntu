@@ -7,7 +7,7 @@ sudo apt update && apt install -y --no-install-recommends \
         build-essential \
         git \
         curl \
-        ssh \        
+        ssh \
         nano \
         htop \
         unzip \
@@ -19,11 +19,11 @@ sudo apt update && apt install -y --no-install-recommends \
 # | PACKAGES FOR C/C++ DEVELOPMENT |
 # ----------------------------------
 sudo apt update && apt install -y --no-install-recommends \
-        cmake \        
+        cmake \
         clang \
-        libboost-dev \          # boost library
+        libboost-dev \
         libboost-all-dev \
-        libjsoncpp-dev \        # json library
+        libjsoncpp-dev
 
 # -----------------------
 # | PACKAGES FOR SERVER |
