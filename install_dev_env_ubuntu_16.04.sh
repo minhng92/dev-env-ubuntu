@@ -13,7 +13,7 @@ sudo apt update && apt install -y --no-install-recommends \
         unzip \
         wget \
         apt-transport-https \
-        ca-certificates \
+        ca-certificates
 
 # ----------------------------------
 # | PACKAGES FOR C/C++ DEVELOPMENT |
@@ -30,7 +30,7 @@ sudo apt update && apt install -y --no-install-recommends \
 # -----------------------
 sudo apt update && apt install -y --no-install-recommends \
         openssh-server \
-        nginx \
+        nginx
 
 
 # DOCKER INSTALLATION
